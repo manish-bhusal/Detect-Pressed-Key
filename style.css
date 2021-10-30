@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.1s linear;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(5, 224, 224);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 32vw;
+  height: 10vh;
+  border-radius: 1.1rem;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 3rem;
+  color: rgb(10, 190, 190);
+}
+
+.container .semi-container {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  height: 45vh;
+  width: 32vw;
+  border-radius: 1.1rem;
+  background-color: white;
+  position: absolute;
+  top: 19rem;
+}
+
+.semi-container.semi-semi-container {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.container .semi-container .key,
+.code {
+  font-size: 5.3rem;
+  color: rgb(15, 153, 233);
+}
+
+.container .semi-container .code {
+  border-radius: 50%;
+  border: 0.7rem solid rgb(15, 153, 233);
+  width: 27%;
+  margin: 1rem auto;
+  padding: 1.2rem;
+}
+
+.container .semi-container .details {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+.container .semi-container .details .key-code,
+.code-code {
+  margin: 0 0.5rem;
+  font-size: 2.7rem;
+}
+
+.container .semi-container .details .code-code {
+  border-left: 0.3rem solid rgb(15, 153, 233);
+  padding: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  .container .semi-container .code {
+    width: 30%;
+  }
+}
+
+@media (max-width: 811px) {
+  html {
+    font-size: 45%;
+  }
+  .container .semi-container .code {
+    width: 40%;
+  }
+  .container .semi-container {
+    width: 40vw;
+    border-radius: 1.1rem;
+    background-color: white;
+  }
+}
